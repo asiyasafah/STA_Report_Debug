@@ -1,0 +1,48 @@
+==========================================================
+           STATIC TIMING ANALYSIS (STA) REPORT
+==========================================================
+
+Design Name        : ALU_Design
+Tool               : Synopsys PrimeTime (Sample)
+
+----------------------------------------------------------
+Timing Path Details
+----------------------------------------------------------
+
+Path Type          : Setup
+
+Startpoint         : FF_A
+Endpoint           : FF_B
+
+Clock Period       : 10.00 ns
+
+Clock Launch Time  : 0.00 ns
+Clock Capture Time : 10.00 ns
+
+Data Arrival Time  : 10.85 ns
+Data Required Time : 10.00 ns
+
+Slack              : -0.85 ns
+
+Status             : VIOLATED
+
+----------------------------------------------------------
+Path Description
+
+FF_A
+ ↓
+AND Gate     Delay : 2.00 ns
+ ↓
+OR Gate      Delay : 2.00 ns
+ ↓
+XOR Gate     Delay : 3.00 ns
+ ↓
+NAND Gate    Delay : 3.85 ns
+ ↓
+FF_B
+
+Total Delay = 10.85 ns
+
+==========================================================
+End of Report
+==========================================================
